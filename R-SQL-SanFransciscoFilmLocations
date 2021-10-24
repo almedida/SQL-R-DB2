@@ -1,3 +1,11 @@
 SELECT Title, Locations, ReleaseYear 
-from FilmLocations where ReleaseYear <= 2000
-order by ReleaseYear desc;
+FROM FilmLocations WHERE ReleaseYear <= 2000
+ORDER BY ReleaseYear DESC;
+
+==============================================================================
+
+SELECT Title, ProductionCompany, Locations, ReleaseYear 
+FROM FilmLocations WHERE Writer <> 'James Cameron';
+
+===============================================================================
+
