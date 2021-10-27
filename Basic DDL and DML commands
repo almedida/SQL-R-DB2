@@ -29,7 +29,7 @@ UPDATE INSTRUCTOR
 DELETE FROM INSTRUCTOR
   WHERE INS_ID = 2;
   
-=========================================================
+-- =========================================================
 
 ------------------------------------------
 --DDL statement for table 'HR' database--
@@ -82,7 +82,7 @@ CREATE TABLE LOCATIONS (
     LOCT_ID,DEP_ID_LOC)
   );
                             
-=========================================================
+-- =========================================================
 
 SELECT *
   FROM EMPLOYEES;
@@ -138,9 +138,9 @@ FROM EMPLOYEES, DEPARTMENTS
 WHERE EMPLOYEES.DEP_ID=DEPARTMENTS.DEPT_ID_DEP
 ORDER BY DEPARTMENTS.DEP_NAME, EMPLOYEES.L_NAME;
 
-===========================================
+-- ===========================================
 INNER AND OUTER JOINS
-===========================================
+-- ===========================================
 
 SELECT E.EMP_ID, E.L_NAME, E.F_NAME, JH.EMPL_ID, JH.START_DATE, JH.JOBS_ID, JH.DEPT_ID
   FROM EMPLOYEES E INNER JOIN JOB_HISTORY JH
